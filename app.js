@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import url from './style.css';
+import style from './style.css';
+
+import Dashboard from './Dashboard.js';
 
 const App = ({ path = '' }) => {
   return (
-    <div className='App'>
-      App
-    </div>
+    <Dashboard />
   );
 };
 

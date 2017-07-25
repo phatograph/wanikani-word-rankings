@@ -18,8 +18,17 @@ const crawler = async () => {
     vocabs = vocabs.concat(await Promise.all(promises))
     vocabs = _.flatten(vocabs);
 
+    vocabs = vocabs.map((v) => {
+      if (!v.user_specific) return v;
+
+      return Object.assign({}, v, {
+        tries: v.user_specific.meaning_incorrect + v.user_specific.meaning_correct + v.user_specific.reading_incorrect + v.user_specific.reading_correct,
+      });
+    })
+
     await db.collection('vocabularies').remove({});
     await db.collection('vocabularies').insertMany(vocabs);
+    console.error(`Saved ${vocabs.length}`)
   }
   catch (e) {
     console.log(e);

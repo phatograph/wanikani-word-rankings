@@ -15,7 +15,7 @@ module.exports = {
       {
         test:   /\.css$/,
         exclude: /(node_modules|bower_components)/,
-        loader: "style-loader!css-loader",
+        loader: "style-loader!css-loader!sass-loader",
       },
     ],
   },
@@ -25,6 +25,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
+      'process.env.API_URL': JSON.stringify(process.env.API_URL),
     }),
   ],
   devServer: {

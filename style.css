@@ -2,4 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Mplus 1p';
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.Dashboard {
+  max-width: 520px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.Vocabularies {
+  width: 100%;
+
+  th {
+    text-align: right;
+    padding: 10px 0;
+  }
+}
+
+.Vocabulary {
+  text-align: right;
+
+  &__char {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  td {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
 }

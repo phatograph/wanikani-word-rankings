@@ -1,0 +1,14 @@
+{
+  "name": "wanikani-word-rankings",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pat Wangrungarun",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2"
+  }
+}

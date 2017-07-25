@@ -4,13 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "./node_modules/webpack/bin/webpack.js"
   },
   "author": "Pat Wangrungarun",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.2",
     "lodash": "^4.17.4",
-    "mongodb": "^2.2.30"
+    "mongodb": "^2.2.30",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.6.1"
   }
 }

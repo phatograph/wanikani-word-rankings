@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import url from './style.css';
+
 const App = ({ path = '' }) => {
   return (
     <div className='App'>

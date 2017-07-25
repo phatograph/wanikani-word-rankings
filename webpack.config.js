@@ -7,8 +7,15 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        use: [ 'babel-loader', ],
-        exclude: /node_modules/
+        use: [
+          'babel-loader',
+        ],
+        exclude: /node_modules|bower_components/,
+      },
+      {
+        test:   /\.css$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: "style-loader!css-loader",
       },
     ],
   },
